@@ -12,7 +12,9 @@ const btnClick = (id) => {
 
 <template>
   <Modal />
-  <div class="px-2.5 sm:px-10 md:px-20 py-5">
-    <Button v-for="btn in store.state.mainBtns" :btn="btn" :key="btn.id" @click="btnClick" />
+  <div class="container mx-auto">
+    <div class="px-2.5 sm:px-0 py-5">
+      <Button v-for="btn in store.state.mainBtns" :btn="btn" :key="btn.id" @click="btnClick" />
+    </div>
   </div>
 </template>
